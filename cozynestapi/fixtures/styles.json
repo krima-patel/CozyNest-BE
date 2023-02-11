@@ -1,0 +1,128 @@
+[
+  {
+    "model": "cozynestapi.style",
+    "pk": 1,
+    "fields": {
+      "style": "Minimalist"
+    }
+  },
+  {
+    "model": "cozynestapi.style",
+    "pk": 2,
+    "fields": {
+      "style": "Modern"
+    }
+  },
+  {
+    "model": "cozynestapi.style",
+    "pk": 3,
+    "fields": {
+      "style": "Industrial"
+    }
+  },
+  {
+    "model": "cozynestapi.style",
+    "pk": 4,
+    "fields": {
+      "style": "Contemporary"
+    }
+  },
+  {
+    "model": "cozynestapi.style",
+    "pk": 5,
+    "fields": {
+      "style": "Mid-Century Modern"
+    }
+  },
+  {
+    "model": "cozynestapi.style",
+    "pk": 6,
+    "fields": {
+      "style": "Scandinavian"
+    }
+  },
+  {
+    "model": "cozynestapi.style",
+    "pk": 7,
+    "fields": {
+      "style": "Bohemian"
+    }
+  },
+  {
+    "model": "cozynestapi.style",
+    "pk": 8,
+    "fields": {
+      "style": "Transitional"
+    }
+  },
+  {
+    "model": "cozynestapi.style",
+    "pk": 9,
+    "fields": {
+      "style": "Hollywood Regency"
+    }
+  },
+  {
+    "model": "cozynestapi.style",
+    "pk": 10,
+    "fields": {
+      "style": "Traditional"
+    }
+  },
+  {
+    "model": "cozynestapi.style",
+    "pk": 11,
+    "fields": {
+      "style": "Mediterranean"
+    }
+  },
+  {
+    "model": "cozynestapi.style",
+    "pk": 12,
+    "fields": {
+      "style": "Retro"
+    }
+  },
+  {
+    "model": "cozynestapi.style",
+    "pk": 13,
+    "fields": {
+      "style": "Modern Farmhouse"
+    }
+  },
+  {
+    "model": "cozynestapi.style",
+    "pk": 14,
+    "fields": {
+      "style": "Coastal"
+    }
+  },
+  {
+    "model": "cozynestapi.style",
+    "pk": 15,
+    "fields": {
+      "style": "70s and 80s"
+    }
+  },
+  {
+    "model": "cozynestapi.style",
+    "pk": 16,
+    "fields": {
+      "style": "Zen"
+    }
+  },
+  {
+    "model": "cozynestapi.style",
+    "pk": 17,
+    "fields": {
+      "style": "French Country"
+    }
+  },
+  {
+    "model": "cozynestapi.style",
+    "pk": 18,
+    "fields": {
+      "style": "Eclectic"
+    }
+  }
+]

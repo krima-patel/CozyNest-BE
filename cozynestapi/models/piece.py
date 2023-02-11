@@ -9,5 +9,11 @@ class Piece(models.Model):
     source = models.CharField(max_length=50)
     condition = models.CharField(max_length=50)
     user = models.ForeignKey(User, on_delete = models.CASCADE)
-    # style = models.Charfield(max_length=50)
-    # need to create custom property for style for many to many relationship
+
+    @property
+    def designs(self):
+        """Will be used to return design styles of a piece"""
+        return self.__designs
+    @designs.setter
+    def designs(self, value):
+        self.__designs = value

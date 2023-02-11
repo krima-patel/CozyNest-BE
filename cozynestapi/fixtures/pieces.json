@@ -1,0 +1,48 @@
+[
+  {
+    "model": "cozynestapi.piece",
+    "pk": 1,
+    "fields": {
+      "room": 1,
+      "piece_type": "L shaped sectional",
+      "image_url": "https://assets.weimgs.com/weimgs/ab/images/wcm/products/202243/0019/harris-3-piece-l-shaped-sectional-100-114-o.jpg",
+      "source": "https://www.westelm.com/products/harris-2-piece-chaise-sectional-h4617/",
+      "condition": "New",
+      "user": 1
+    }
+  },
+  {
+    "model": "cozynestapi.piece",
+    "pk": 2,
+    "fields": {
+      "room": 2,
+      "piece_type": "Console Vanity",
+      "image_url": "https://www.virtuusa.com/wp-content/uploads/2022/01/GD-50072-CMRO-WH_3-9.jpg",
+      "condition": "DIY",
+      "user": 1
+    }
+  },
+  {
+    "model": "cozynestapi.piece",
+    "pk": 3,
+    "fields": {
+      "room": 4,
+      "piece_type": "Desk",
+      "image_url": "https://d35mbwdnoe7hvk.cloudfront.net/wp-content/uploads/2020/09/20_RoomsPage_Gallery_Jeremiah-Brent-Home-Office1_620x465-620x465.jpg",
+      "condition": "Used",
+      "user": 1
+    }
+  },
+  {
+    "model": "cozynestapi.piece",
+    "pk": 4,
+    "fields": {
+      "room": 5,
+      "piece_type": "Bean Bag Chairs",
+      "image_url": "https://media-cldnry.s-nbcnews.com/image/upload/newscms/2022_06/1839368/screen_shot_2022-02-09_at_11-50-55_am.png",
+      "condition": "New",
+      "user": 1
+    }
+  }
+
+]
