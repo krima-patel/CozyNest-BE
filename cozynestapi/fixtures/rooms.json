@@ -1,0 +1,74 @@
+[
+  {
+    "model": "cozynestapi.room",
+    "pk": 1,
+    "fields": {
+      "name": "Living Room",
+      "purpose": "Family gatherings, game and movie nights",
+      "theme": "Neutral colors with warm accent colors",
+      "mood": "Calming vibes",
+      "deadline": "2023-02-11",
+      "user": 1
+    }
+  },
+  {
+    "model": "cozynestapi.room",
+    "pk": 2,
+    "fields": {
+      "name": "Master bathroom",
+      "purpose": "Skincare and makeup routine setup",
+      "theme": "Cool colors, shades of blue",
+      "mood": "Organized and clean, while feeling relaxed",
+      "deadline": "2023-03-11",
+      "user": 1
+    }
+  },
+  {
+    "model": "cozynestapi.room",
+    "pk": 3,
+    "fields": {
+      "name": "Master bathroom",
+      "purpose": "Skincare and makeup routine setup",
+      "theme": "Cool colors, shades of blue",
+      "mood": "Organized and clean, while feeling relaxed",
+      "deadline": "2023-03-12",
+      "user": 1
+    }
+  },
+  {
+    "model": "cozynestapi.room",
+    "pk": 4,
+    "fields": {
+      "name": "Study Room/Office",
+      "purpose": "Office like environment with area hang out",
+      "theme": "Neutral tones with sofa as accent piece",
+      "mood": "Organized with house plants to bring relaxation",
+      "deadline": "2023-03-13",
+      "user": 1
+    }
+  },
+  {
+    "model": "cozynestapi.room",
+    "pk": 5,
+    "fields": {
+      "name": "Bonus Room",
+      "purpose": "Friends and family gatherings, pool night",
+      "theme": "Man cave vibes, brighter lourder colors",
+      "mood": "Fun environment to forget about life basically",
+      "deadline": "2023-03-14",
+      "user": 1
+    }
+  },
+  {
+    "model": "cozynestapi.room",
+    "pk": 6,
+    "fields": {
+      "name": "Master Bedroom",
+      "purpose": "Sleep/Rest",
+      "theme": "Neutral tones, minimal furniture",
+      "mood": "Environment that promotes rest and peace",
+      "deadline": "2023-03-15",
+      "user": 1
+    }
+  }
+]

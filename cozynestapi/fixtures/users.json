@@ -1,0 +1,11 @@
+[
+  {
+    "model": "cozynestapi.user",
+    "pk": 1,
+    "fields": {
+      "uid": "1uaQI3RnTnUqga65du7HJYXy1es1",
+      "name": "Krima Patel",
+      "bio": "My go-to style is mid-century modern, with hints of moroccan and east asian styles"
+    }
+  }
+]

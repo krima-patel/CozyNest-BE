@@ -1,0 +1,34 @@
+[
+  {
+    "model": "cozynestapi.piecestyle",
+    "pk": 1,
+    "fields": {
+      "piece": 1,
+      "style": 2
+    }
+  },
+  {
+    "model": "cozynestapi.piecestyle",
+    "pk": 2,
+    "fields": {
+      "piece": 2,
+      "style": 5
+    }
+  },
+  {
+    "model": "cozynestapi.piecestyle",
+    "pk": 3,
+    "fields": {
+      "piece": 3,
+      "style": 1
+    }
+  },
+  {
+    "model": "cozynestapi.piecestyle",
+    "pk": 4,
+    "fields": {
+      "piece": 4,
+      "style": 4
+    }
+  }
+]
