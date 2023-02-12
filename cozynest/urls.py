@@ -15,7 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from cozynestapi.views import register_user, check_user, RoomView, PieceView
+from django.conf.urls import include
+from rest_framework import routers
+
+router = routers.DefaultRouter(trailing_slash=False)
+router.register(r'rooms', RoomView, 'room')
+router.register(r'pieces', PieceView, 'piece')
 
 urlpatterns = [
+    path('register', register_user),
+    path('checkuser', check_user),
     path('admin/', admin.site.urls),
+    path('', include(router.urls)),
 ]
