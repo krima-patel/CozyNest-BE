@@ -3,7 +3,8 @@ from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from cozynestapi.models import Piece
+from cozynestapi.models import Room, Piece, User, PieceStyle, Style
+from .piece_style import PieceStyleSerializer
 
 class PieceView(ViewSet):
     """CozyNest Pieces View"""
@@ -34,6 +35,24 @@ class PieceView(ViewSet):
         """
         pieces = Piece.objects.all()
         serializer = PieceSerializer(pieces, many=True)
+        return Response(serializer.data)
+    def create(self, request):
+        """Handle POST operations
+
+        Returns
+            Response -- JSON serialized piece instance
+        """
+        user = User.objects.get(pk=request.data["user"])
+
+        piece = Piece.objects.create(
+            room=Room.objects.get(pk=request.data["room_id"]),
+            piece_type=request.data["piece_type"],
+            image_url=request.data["image_url"],
+            source=request.data["source"],
+            condition=request.data["condition"],
+            user=user
+        )
+        serializer = PieceSerializer(piece)
         return Response(serializer.data)
 
 class PieceSerializer(serializers.ModelSerializer):
