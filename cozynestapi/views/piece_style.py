@@ -3,7 +3,7 @@ from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from cozynestapi.models import PieceStyle
+from cozynestapi.models import Piece, PieceStyle, User
 
 class PieceStyleView(ViewSet):
     """CozyNest Piece Style View"""
@@ -26,6 +26,17 @@ class PieceStyleView(ViewSet):
         """
         piece_styles = PieceStyle.objects.all()
         serializer = PieceStyleSerializer(piece_styles, many=True)
+        return Response(serializer.data)
+
+    def create(self, request):
+        """Creating styles for pieces - multi-select"""
+        user = User.objects.get(pk=request.data["user"])
+
+        piece_styles=PieceStyle.objects.create(
+            piece=Piece.objects.get(pk=request.data["piece_id"]),
+            style=request.data["style"]
+        )
+        serializer = PieceStyleSerializer(piece_styles)
         return Response(serializer.data)
 
 class PieceStyleSerializer(serializers.ModelSerializer):
