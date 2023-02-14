@@ -85,6 +85,35 @@ class PieceView(ViewSet):
             serializer = PieceSerializer(piece)
         return Response(serializer.data)
 
+    def update(self, request, pk):
+        """Handle PUT requests for a piece/item
+
+        Returns:
+            Response -- Empty body with 204 status code
+        """
+        piece=Piece.objects.get(pk=pk)
+        piece.piece_type=request.data["piece_type"]
+        piece.image_url=request.data["image_url"]
+        piece.source=request.data["source"]
+        piece.condition=request.data["condition"]
+
+        room=Room.objects.get(pk=request.data["room_id"])
+        piece.room=room
+        piece.save()
+
+        designs=request.data["designs"]
+        existing_designs=PieceStyle.objects.filter(piece=piece)
+
+        if existing_designs is not None:
+            for design in existing_designs:
+                design.delete()
+
+        if designs is not None:
+            for design in designs:
+                PieceStyle.objects.create(piece=piece, style=Style.objects.get(pk=design))
+
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
+
 class PieceSerializer(serializers.ModelSerializer):
     """JSON serializer for game types
     """

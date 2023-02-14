@@ -54,6 +54,22 @@ class RoomView(ViewSet):
         serializer = RoomSerializer(room)
         return Response(serializer.data)
 
+    def update(self, request, pk):
+        """Handle PUT requests for a room
+
+        Returns:
+            Response -- Empty body with 204 status code
+        """
+        room=Room.objects.get(pk=pk)
+        room.name=request.data["name"]
+        room.purpose=request.data["purpose"]
+        room.theme=request.data["theme"]
+        room.mood=request.data["mood"]
+        room.deadline=request.data["deadline"]
+        room.save()
+
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
+
 class RoomSerializer(serializers.ModelSerializer):
     """JSON serializer for rooms"""
     class Meta:
