@@ -39,6 +39,12 @@ class PieceStyleView(ViewSet):
         serializer = PieceStyleSerializer(piece_styles)
         return Response(serializer.data)
 
+    def destroy(self, request, pk):
+        """Deleting a style(s) for a piece"""
+        piece_style=PieceStyle.objects.get(pk=pk)
+        piece_style.delete()
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
+
 class PieceStyleSerializer(serializers.ModelSerializer):
     """JSON serializer for piece styles
     """

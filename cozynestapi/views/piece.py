@@ -114,6 +114,12 @@ class PieceView(ViewSet):
 
         return Response(None, status=status.HTTP_204_NO_CONTENT)
 
+    def destroy(self, request, pk):
+        """Handle DELETE request for a piece"""
+        piece=Piece.objects.get(pk=pk)
+        piece.delete()
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
+
 class PieceSerializer(serializers.ModelSerializer):
     """JSON serializer for game types
     """
