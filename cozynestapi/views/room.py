@@ -5,6 +5,7 @@ from rest_framework.response import Response
 from rest_framework import serializers, status
 from cozynestapi.models import Room, User
 
+
 class RoomView(ViewSet):
     """CozyNest Rooms View"""
 
@@ -31,6 +32,9 @@ class RoomView(ViewSet):
             Response -- JSON serialized list of rooms
         """
         rooms = Room.objects.all()
+        user_id = request.query_params.get('userId', None)
+        if user_id is not None:
+            rooms = rooms.filter(user_id=user_id)
 
         serializer = RoomSerializer(rooms, many=True)
         return Response(serializer.data)
@@ -60,21 +64,22 @@ class RoomView(ViewSet):
         Returns:
             Response -- Empty body with 204 status code
         """
-        room=Room.objects.get(pk=pk)
-        room.name=request.data["name"]
-        room.purpose=request.data["purpose"]
-        room.theme=request.data["theme"]
-        room.mood=request.data["mood"]
-        room.deadline=request.data["deadline"]
+        room = Room.objects.get(pk=pk)
+        room.name = request.data["name"]
+        room.purpose = request.data["purpose"]
+        room.theme = request.data["theme"]
+        room.mood = request.data["mood"]
+        room.deadline = request.data["deadline"]
         room.save()
 
         return Response(None, status=status.HTTP_204_NO_CONTENT)
 
     def destroy(self, request, pk):
         """Handle DELETE request for a room"""
-        room=Room.objects.get(pk=pk)
+        room = Room.objects.get(pk=pk)
         room.delete()
         return Response(None, status=status.HTTP_204_NO_CONTENT)
+
 
 class RoomSerializer(serializers.ModelSerializer):
     """JSON serializer for rooms"""

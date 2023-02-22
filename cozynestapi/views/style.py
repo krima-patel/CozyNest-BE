@@ -26,10 +26,10 @@ class StyleView(ViewSet):
         """
         styles = Style.objects.all()
         serializer = StyleSerializer(styles, many=True)
-        # styles_serialized = serializer.data
-        # for style in styles_serialized:
-        #     style['value'] = style.pop['id']
-        #     style['label'] = style.pop('style')
+        styles_serialized = serializer.data
+        for style in styles_serialized:
+            style['value'] = style.pop('id')
+            style['label'] = style.pop('style')
         return Response(serializer.data)
 
 class StyleSerializer(serializers.ModelSerializer):
