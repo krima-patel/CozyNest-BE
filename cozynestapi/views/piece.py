@@ -52,7 +52,7 @@ class PieceView(ViewSet):
                 designs_serialized = PieceStyleSerializer(designs, many=True)
                 piece.designs = designs_serialized.data
                 serializer = PieceSerializer(pieces, many=True)
-            return Response(serializer.data)
+            # return Response(serializer.data)
         else:
             pieces = Piece.objects.all()
             for piece in pieces:
