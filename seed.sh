@@ -10,5 +10,5 @@ python manage.py loaddata pieces
 python manage.py loaddata styles
 python manage.py loaddata piecestyles
 
-# Run chmod +x seed.sh in the terminal.
-# run ./seed.sh in the terminal to run the commands
+# Run "chmod +x seed.sh" in the terminal.
+# run "./seed.sh" in the terminal to run the commands

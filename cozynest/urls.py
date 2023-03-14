@@ -15,15 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from cozynestapi.views import register_user, check_user, RoomView, PieceView, StyleView, PieceStyleView
 from django.conf.urls import include
 from rest_framework import routers
+from cozynestapi.views import register_user, check_user, RoomView, PieceView, StyleView, PieceStyleView, UserView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'rooms', RoomView, 'room')
 router.register(r'pieces', PieceView, 'piece')
 router.register(r'styles', StyleView, 'style')
 router.register(r'piecestyles', PieceStyleView, 'piecestyle')
+router.register(r'users', UserView, 'user')
 
 urlpatterns = [
     path('register', register_user),

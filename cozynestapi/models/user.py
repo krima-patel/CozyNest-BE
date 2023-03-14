@@ -5,3 +5,4 @@ class User(models.Model):
     uid = models.CharField(max_length=50)
     name = models.CharField(max_length=50)
     bio = models.CharField(max_length=50)
+    image = models.CharField(max_length=200)
