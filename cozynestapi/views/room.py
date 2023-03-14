@@ -32,9 +32,9 @@ class RoomView(ViewSet):
             Response -- JSON serialized list of rooms
         """
         rooms = Room.objects.all()
-        user_id = request.query_params.get('userId', None)
-        if user_id is not None:
-            rooms = rooms.filter(user_id=user_id)
+        user = request.query_params.get('user', None)
+        if user is not None:
+            rooms = rooms.filter(user=user)
 
         serializer = RoomSerializer(rooms, many=True)
         return Response(serializer.data)

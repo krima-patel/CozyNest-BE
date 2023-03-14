@@ -1,6 +1,6 @@
-from cozynestapi.models import User
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+from cozynestapi.models import User
 
 
 @api_view(['POST'])
@@ -22,7 +22,8 @@ def check_user(request):
             'id': user.id,
             'uid': user.uid,
             'name': user.name,
-            'bio': user.bio
+            'bio': user.bio,
+            'image': user.image,
         }
         return Response(data)
     else:
@@ -43,7 +44,8 @@ def register_user(request):
     user = User.objects.create(
         name=request.data['name'],
         bio=request.data['bio'],
-        uid=request.data['uid']
+        uid=request.data['uid'],
+        image=request.data['image'],
     )
 
     # Return the gamer info to the client
@@ -51,6 +53,7 @@ def register_user(request):
         'id': user.id,
         'uid': user.uid,
         'name': user.name,
-        'bio': user.bio
+        'bio': user.bio,
+        'image': user.image,
     }
     return Response(data)
