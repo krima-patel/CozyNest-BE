@@ -72,7 +72,7 @@ Krima Patel
 
 ## Backend Tech Stacks:
 <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/><img height=50/>
-<img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django.svg"/><img height=50/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg" />
 <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original-wordmark.svg"/><img height=50/>
           
           
