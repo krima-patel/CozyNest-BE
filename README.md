@@ -70,9 +70,13 @@ Krima Patel
 - [Krima's LinkedIn](https://www.linkedin.com/in/krima-patel/)
 - Krima's email: patel.krima@hotmail.com
 
-## Backend Tech Stacks:
-<img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/><img height=50/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg" />
-<img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original-wordmark.svg"/><img height=50/>
-          
-          
+## Backend Tech Stacks: 
+<div align="center">  
+<a href="https://www.python.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/python-original.svg" alt="Python" height="50" /></a>  
+<a href="https://www.djangoproject.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/django-original.svg" alt="Django" height="50" /></a>
+<a href="https://sqlite.org/index.html" targert="_blank"><img style="margin 10px" src="https://user-images.githubusercontent.com/33158051/103467186-7b6a8900-4d1a-11eb-9907-491064bc8458.png" alt="SQLite" height="50" /></a>
+</div>
+
+</td><td valign="top" width="33%">
+
+<br/>
