@@ -71,4 +71,4 @@ Krima Patel
 - Krima's email: patel.krima@hotmail.com
 
 ## Backend Tech Stacks:
-https://www.python.org/static/community_logos/python-logo.png
+<img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/><img height=50/>
