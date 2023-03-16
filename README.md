@@ -16,7 +16,10 @@ Cozy Nest is an interior design and decor application providing users structure 
 - Authenticated users are able to edit and delete pieces they have created and shared, but can only view pieces created by other authenticated users
 - Users are able to sign out of the application via the "Sign Out" button on the nav bar
 
-## Check out Cozy Nest! Run on your local machine:
+## Check out Cozy Nest!
+In order for Cozy Nest to work, you will need the client side repo, you will find it [here](https://github.com/krima-patel/CozyNest-FE) and the server side repo. The server side API server and the client side must run simultaneously to access and use Cozy Nest. The instructions for how to run the client side locally can be found in the CozyNest-FE README.md.
+
+### Run on your local machine:
 These are the server side instructions for this application:
 1. Clone CozyNest-BE to your local machine
 git@github.com:krima-patel/CozyNest-BE.git
