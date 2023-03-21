@@ -14,17 +14,26 @@ Cozy Nest is an interior design and decor application providing users structure 
 * Rooms:
   * Authenticated users are able to create their a room/space
   * Authenticated users are able to edit and delete rooms they have created, but can only view rooms created by other authenticated users
+  
+ ![image](https://user-images.githubusercontent.com/102260648/226735335-c1c8801a-76f6-4170-a286-6cbfb4bdb586.png)
 
 * Pieces:
   * Authenticated users are able to submit a piece(s) that accompanies a particular room
   * Authenticated users are able to create a piece they would like to share
   * Authenticated users are able to select one room they would like a piece to belong to. The room they select will be a room they have created, not a room created by another authenticated user.
   * Authenticated users are able to edit and delete pieces they have created and shared, but can only view pieces created by other authenticated users
+  
+![image](https://user-images.githubusercontent.com/102260648/226735401-2d36248c-2c29-4557-858f-124d97d0509c.png)
+  
+ * Styles:
+  * Authenticated users are able to select more than one interior design style when creating/sharing a piece. This was done by adding react-multi-select.
 
 * Users are able to sign out of the application via the "Sign Out" button on the nav bar
 
 ## Begin Designing Your Own Cozy Nest!
-In order for Cozy Nest server side to work, you will need the client side repo, you can find it [here](https://github.com/krima-patel/CozyNest-FE). The server side API server and the client side must run simultaneously in order to access and use Cozy Nest. The instructions for how to run the client side locally can be found in the CozyNest-FE README.md.
+**In order for Cozy Nest server side to work, you will need the client side repo, you can find it [here](https://github.com/krima-patel/CozyNest-FE). The server side API server and the client side must run simultaneously in order to access and use Cozy Nest. The instructions for how to run the client side locally can be found in the CozyNest-FE README.md.**
+
+![image](https://user-images.githubusercontent.com/102260648/226734908-87d233fa-a917-471d-bab4-3c5c2b90e16e.png)
 
 ### Run Backend Locally:
 These are the server side instructions for this application:
